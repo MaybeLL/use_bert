@@ -4,9 +4,9 @@ import collections
 import os
 import numpy as np
 import json
-
-flags = tf.flags
-FLAGS = tf.compat.flags.Flag
+# tensor2移除了tf.flags
+flags = tf.flags    # 什么用途？# TODO
+FLAGS = flags.Flag
 bert_path = 'checkpoint/chinese_L-12_H-768_A-12/'
 
 flags.DEFINE_string(
